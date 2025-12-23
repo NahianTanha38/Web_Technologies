@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AGRO - Consumer Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f7f6;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            padding: 15px 30px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            background: white;
+            padding: 20px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        .section h2 {
+            color: #2e7d32;
+            margin-bottom: 15px;
+        }
+
+        .product {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+
+        button {
+            background-color: #2e7d32;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #256528;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>AGRO – Consumer Dashboard</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Cart</a>
+        <a href="#">Orders</a>
+        <a href="#">Profile</a>
+        <a href="#">Logout</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <!-- Browsing Section -->
+    <div class="section">
+        <h2>Browse Products</h2>
+        <input type="text" placeholder="Search products..." style="padding:8px; width:60%;">
+        <br><br>
+
+        <div class="product">
+            <span>Fresh Tomatoes – ৳50/kg</span>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <span>Organic Rice – ৳70/kg</span>
+            <button>Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <span>Potatoes – ৳40/kg</span>
+            <button>Add to Cart</button>
+        </div>
+    </div>
+
+    <!-- Buying Section -->
+    <div class="section">
+        <h2>My Cart</h2>
+        <p>Items: 3</p>
+        <p>Total Price: ৳160</p>
+        <button>Pay Online / Card</button>
+    </div>
+
+    <!-- Tracking Section -->
+    <div class="section">
+        <h2>Order Tracking</h2>
+        <p>Order #1023 – <b>Out for Delivery</b></p>
+        <p>Order #1018 – <b>Delivered</b></p>
+        <button>View Purchase History</button>
+    </div>
+
+    <!-- Social Section -->
+    <div class="section">
+        <h2>Review & Rate Farmers</h2>
+        <p>Farmer: Rahim Agro Farm</p>
+        <label>Rating:</label>
+        <select>
+            <option>⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐⭐</option>
+        </select>
+        <br><br>
+        <textarea rows="3" cols="50" placeholder="Write your review..."></textarea>
+        <br><br>
+        <button>Submit Review</button>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 AGRO | Smart Farming Marketplace
+</footer>
+
+</body>
+</html>
